@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20220820 00:12:43.125" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.18 on win32)">
+<suite source="C:\Robot_Framework\robot\webTesting\Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="CT01 - Validar Campos Obrigatorios">
+<kw name="Acessar a url" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220820 00:12:43.271" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?controller=authentication&amp;back=my-account'.</msg>
+<status status="PASS" endtime="20220820 00:12:47.146" starttime="20220820 00:12:43.271"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:47.146" starttime="20220820 00:12:43.271"/>
+</kw>
+<kw name="Informar um email válido no campo: Email Address" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_EMAIL}</arg>
+<arg>monteiroclmauricio@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:47.147" level="INFO">Typing text 'monteiroclmauricio@gmail.com' into text field '//input[contains(@name,'create')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:47.245" starttime="20220820 00:12:47.147"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:47.245" starttime="20220820 00:12:47.147"/>
+</kw>
+<kw name="Clicar em “Create an account”" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_CREATE_COUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:47.246" level="INFO">Clicking element '//span[contains(.,'Create an account')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:47.300" starttime="20220820 00:12:47.246"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:47.300" starttime="20220820 00:12:47.246"/>
+</kw>
+<kw name="Validar campos obrigatorios" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${BTN_REGISTER}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220820 00:12:48.830" starttime="20220820 00:12:47.301"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_REGISTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:48.830" level="INFO">Clicking element '//span[contains(.,'Register')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:49.735" starttime="20220820 00:12:48.830"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ALERT_MSG}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220820 00:12:49.772" starttime="20220820 00:12:49.736"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>ALERT.PNG</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220820 00:12:49.928" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="ALERT.PNG"&gt;&lt;img src="ALERT.PNG" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220820 00:12:49.928" starttime="20220820 00:12:49.772"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:49.928" starttime="20220820 00:12:47.301"/>
+</kw>
+<kw name="Fechar navegador" library="resource">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220820 00:12:52.064" starttime="20220820 00:12:49.929"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:52.064" starttime="20220820 00:12:49.929"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:52.064" starttime="20220820 00:12:43.270"/>
+</test>
+<test id="s1-t2" name="CT02 - Validar Registro de Conta">
+<kw name="Acessar a url" library="resource">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220820 00:12:52.077" level="INFO">Opening browser 'chrome' to base url 'http://automationpractice.com/index.php?controller=authentication&amp;back=my-account'.</msg>
+<status status="PASS" endtime="20220820 00:12:56.614" starttime="20220820 00:12:52.077"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:56.615" starttime="20220820 00:12:52.076"/>
+</kw>
+<kw name="Informar um email válido no campo: Email Address" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_EMAIL}</arg>
+<arg>monteiroclmauricio@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:56.616" level="INFO">Typing text 'monteiroclmauricio@gmail.com' into text field '//input[contains(@name,'create')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:56.715" starttime="20220820 00:12:56.616"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:56.716" starttime="20220820 00:12:56.615"/>
+</kw>
+<kw name="Clicar em “Create an account”" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_CREATE_COUNT}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:56.717" level="INFO">Clicking element '//span[contains(.,'Create an account')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:56.774" starttime="20220820 00:12:56.717"/>
+</kw>
+<status status="PASS" endtime="20220820 00:12:56.775" starttime="20220820 00:12:56.716"/>
+</kw>
+<kw name="Criacao de Conta" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${RDN_TITLE}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220820 00:12:58.952" starttime="20220820 00:12:56.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${RDN_TITLE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:58.952" level="INFO">Clicking element '//input[@type='radio'][contains(@id,'gender1')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:58.997" starttime="20220820 00:12:58.952"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_FIRST_NAME}</arg>
+<arg>MAURICIO</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:58.997" level="INFO">Typing text 'MAURICIO' into text field '//input[@name='customer_firstname']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.096" starttime="20220820 00:12:58.997"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_LAST_NAME}</arg>
+<arg>MONTEIRO</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.097" level="INFO">Typing text 'MONTEIRO' into text field '//input[@name='customer_lastname']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.188" starttime="20220820 00:12:59.096"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${IPT_PASSWORD}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" endtime="20220820 00:12:59.214" starttime="20220820 00:12:59.188"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_PASSWORD}</arg>
+<arg>Simba</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.215" level="INFO">Typing text 'Simba' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.291" starttime="20220820 00:12:59.214"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_FIRST_NAME_ADDRESS}</arg>
+<arg>ESTRADA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.292" level="INFO">Typing text 'ESTRADA' into text field '//input[@name='firstname']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.388" starttime="20220820 00:12:59.291"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_LAST_NAME_ADDRESS}</arg>
+<arg>DO TINDIBA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.389" level="INFO">Typing text 'DO TINDIBA' into text field '//input[@name='lastname']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.515" starttime="20220820 00:12:59.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_ADDRESS}</arg>
+<arg>ESTRADA DO TINDIBA</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.517" level="INFO">Typing text 'ESTRADA DO TINDIBA' into text field '//input[@name='address1']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.623" starttime="20220820 00:12:59.516"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_CITY}</arg>
+<arg>BRASIL</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.624" level="INFO">Typing text 'BRASIL' into text field '//input[@name='city']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.698" starttime="20220820 00:12:59.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CBO_STATE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.699" level="INFO">Clicking element '//option[contains(.,'Colorado')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.732" starttime="20220820 00:12:59.698"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_POSTCODE}</arg>
+<arg>22740</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.734" level="INFO">Typing text '22740' into text field '//input[@name='postcode']'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.817" starttime="20220820 00:12:59.733"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CBO_COUNTRY}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.817" level="INFO">Clicking element '//option[contains(.,'United States')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.847" starttime="20220820 00:12:59.817"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${IPT_MOBILE_PHONE}</arg>
+<arg>21981812994</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.848" level="INFO">Typing text '21981812994' into text field '//input[contains(@name,'mobile')]'.</msg>
+<status status="PASS" endtime="20220820 00:12:59.925" starttime="20220820 00:12:59.847"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BTN_REGISTER}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220820 00:12:59.925" level="INFO">Clicking element '//span[contains(.,'Register')]'.</msg>
+<status status="PASS" endtime="20220820 00:13:02.552" starttime="20220820 00:12:59.925"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>SUCESS.PNG</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220820 00:13:02.746" html="true" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="SUCESS.PNG"&gt;&lt;img src="SUCESS.PNG" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220820 00:13:02.746" starttime="20220820 00:13:02.553"/>
+</kw>
+<status status="PASS" endtime="20220820 00:13:02.746" starttime="20220820 00:12:56.775"/>
+</kw>
+<status status="PASS" endtime="20220820 00:13:02.746" starttime="20220820 00:12:52.074"/>
+</test>
+<doc>Suite exemplo webtesting</doc>
+<status status="PASS" endtime="20220820 00:13:02.763" starttime="20220820 00:12:43.125"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Test" pass="2">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
